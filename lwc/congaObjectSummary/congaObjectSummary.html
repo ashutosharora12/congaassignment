@@ -1,0 +1,10 @@
+<template>
+    <div class="slds-grid" for:each={lstSummaryData} for:item="objField" key={objField.sLabel}>
+        <div class="slds-col slds-size--2-of-6 slds-box">
+            <p><b>{objField.sLabel}</b></p>
+        </div>
+        <div class="slds-col slds-size--4-of-6 slds-box">
+            <lightning-formatted-text key={objField.sValue} value={objField.sValue} label={objField.sLabel}></lightning-formatted-text>
+        </div>
+    </div>
+</template>
